@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import css from './ContactForm.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import {addContact} from '../../redux/contactsSlice';
+// import {addContact} from '../../redux/contactsSlice';
 import {getContactsState} from '../../redux/selectors';
-
+import { addContact } from "redux/operations";
+import { nanoid } from 'nanoid';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -53,6 +54,7 @@ const ContactForm = () => {
         }
         else{
           const newContact={
+            id: nanoid(),
             name:name,
             number:number,
           }
