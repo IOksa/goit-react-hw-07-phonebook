@@ -1,0 +1,40 @@
+@import '../../vars.css';
+
+.contactList__title{
+    color: var(--title-color);
+    background-color: 
+}
+
+.contactList__list{
+    margin: 0 0 0 20px;
+    padding: 0;
+    list-style-type: circle;
+    list-style-position: outside;
+}   
+
+.contactList__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    position: relative;
+    
+}
+
+
+.contactList__item::before {
+    display: block;
+    content: "";
+
+    position: absolute;
+    left: -14px; ;
+   
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+
+    background-color:var(--title-color);
+
+
+
+}
